@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>eClerx Podcast Page</title>
-      <!-- Font Awesome (local path) -->
-      <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
-      <!-- Styles -->
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-   </head>
-   <body>
-      <header class="hero">
-         <div class="breadcrumb">Home / News & Media</div>
-         <h1>eClerx Launches “How to Grow Using AI, ML, and Intelligent Automation” Podcast</h1>
-         <p class="meta">Editorial Staff<br />January 25, 2024</p>
-      </header>
-      <div class="container">
-         <aside class="toc">
-            <h2>Table of Contents</h2>
-            <ul>
-               <li><a href="#summary">Summary</a></li>
-               <li><a href="#subscribe">Subscribe Us</a></li>
-               <li><a href="#about">About eClerx</a></li>
-            </ul>
-            <div class="social-icons">
-               <a href="#" id="share-x"><i class="fa-brands fa-x-twitter"></i></a>
-               <a href="#" id="share-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-               <a href="#" id="share-facebook"><i class="fa-brands fa-facebook"></i></a>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>eClerx Podcast Page</title>
+   <!-- Font Awesome (local path) -->
+   <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+   <!-- Styles -->
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+   <header class="hero">
+      <div class="breadcrumb">Home / News & Media</div>
+      <h1>eClerx Launches “How to Grow Using AI, ML, and Intelligent Automation” Podcast</h1>
+      <p class="meta">Editorial Staff<br />January 25, 2024</p>
+   </header>
+   <div class="container">
+      <aside class="toc">
+         <h2>Table of Contents</h2>
+         <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#subscribe">Subscribe Us</a></li>
+            <li><a href="#about">About eClerx</a></li>
+         </ul>
+         <div class="social-icons">
+            <a href="#" id="share-x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" id="share-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" id="share-facebook"><i class="fa-brands fa-facebook"></i></a>
+         </div>
+      </aside>
+      <main>
+         <section id="summary">
+            <h2>Summary</h2>
+            <img src="assets/hero-cover.png" alt="Podcast Hero" class="hero-image" />
+            <div id="summary-content"></div>
+         </section>
+         <section id="subscribe">
+            <h2>Subscribe Us</h2>
+            <div id="subscribe-content"></div>
+         </section>
+         <section id="about">
+            <h2>About eClerx</h2>
+            <div id="about-content"></div>
+         </section>
+         <div class="tags">
+            <span>Intelligent Automation</span>
+            <span>Digital Transformation</span>
+            <span>Machine Learning</span>
+            <span>Data Science</span>
+         </div>
+      </main>
+   </div>
+   <section class="slider-section">
+      <h2>Continue Reading</h2>
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <img src="assets/chip-design-ai.png" alt="Blog 1" />
+               <h3>AI Chip Design</h3>
+               <p>Discover how AI is revolutionizing chip.</p>
             </div>
-         </aside>
-         <main>
-            <section id="summary">
-               <h2>Summary</h2>
-               <img src="assets/hero-cover.png" alt="Podcast Hero" class="hero-image" />
-               <div id="summary-content"></div>
-            </section>
-            <section id="subscribe">
-               <h2>Subscribe Us</h2>
-               <div id="subscribe-content"></div>
-            </section>
-            <section id="about">
-               <h2>About eClerx</h2>
-               <div id="about-content"></div>
-            </section>
-            <div class="tags">
-               <span>Intelligent Automation</span>
-               <span>Digital Transformation</span>
-               <span>Machine Learning</span>
-               <span>Data Science</span>
+            <div class="swiper-slide">
+               <img src="assets/GenAI360-BIG-Innovation-Award-2024-1-960x720.png" alt="Blog 2" />
+               <h3>GenAI360 Wins</h3>
+               <p>GenAI360 secures 2024 innovation award.</p>
             </div>
-         </main>
+            <div class="swiper-slide">
+               <img src="assets/ai-device-technology-laptop-1.webp" alt="Blog 3" />
+               <h3>AI Devices</h3>
+               <p>The future of AI-powered laptops & tech.</p>
+            </div>
+            <div class="swiper-slide">
+               <img src="assets/ai-device-technology-laptop-1.webp" alt="Blog 3" />
+               <h3>AI Devices Test</h3>
+               <p>The future of AI-powered laptops & tech.</p>
+            </div>
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
       </div>
-	  <section class="slider-section">
-               <h2>Continue Reading</h2>
-               <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <img src="assets/chip-design-ai.png" alt="Blog 1" />
-                        <h3>AI Chip Design</h3>
-                        <p>Discover how AI is revolutionizing chip architecture.</p>
-                     </div>
-                     <div class="swiper-slide">
-                        <img src="assets/GenAI360-BIG-Innovation-Award-2024-1-960x720.png" alt="Blog 2" />
-                        <h3>GenAI360 Wins</h3>
-                        <p>GenAI360 secures 2024 innovation award.</p>
-                     </div>
-                     <div class="swiper-slide">
-                        <img src="assets/ai-device-technology-laptop-1.webp" alt="Blog 3" />
-                        <h3>AI Devices</h3>
-                        <p>The future of AI-powered laptops & tech.</p>
-                     </div>
-                     <div class="swiper-slide">
-                        <img src="assets/ai-device-technology-laptop-1.webp" alt="Blog 3" />
-                        <h3>AI Devices Test</h3>
-                        <p>The future of AI-powered laptops & tech.</p>
-                     </div>
-                  </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-pagination"></div>
-               </div>
-            </section>
-      <button id="backToTop" title="Go to top" aria-label="Back to Top">
-  <i class="fa-solid fa-chevron-up"></i>
-</button>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="script.js"></script>
-   </body>
+   </section>
+   <button id="backToTop" title="Go to top" aria-label="Back to Top">
+      <i class="fa-solid fa-chevron-up"></i>
+   </button>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+
 </html>
