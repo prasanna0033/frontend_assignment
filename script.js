@@ -58,7 +58,6 @@ fetch("https://eclerx.com/wp-json/wp/v2/posts/51641")
       strongTags.forEach(strong => {
           const text = strong.textContent.trim();
 
-          // === 2. SUBSCRIBE: Only show heading paragraph
           if (text === "NEW YORK, April 24, 2025:") {
               const parent = strong.closest("p") || strong.parentElement;
               if (parent) {
@@ -66,7 +65,6 @@ fetch("https://eclerx.com/wp-json/wp/v2/posts/51641")
               }
           }
 
-          // === 3. ABOUT: Save starting point
           if (text === "About eClerx") {
               aboutStartNode = strong.closest("p") || strong.parentElement;
           }
@@ -75,7 +73,6 @@ fetch("https://eclerx.com/wp-json/wp/v2/posts/51641")
       document.getElementById("subscribe-content").innerHTML =
           subscribeHTML || "<p>Subscribe section not found.</p>";
 
-      // === Extract content AFTER About eClerx heading block ===
       let aboutHTML = "";
       if (aboutStartNode) {
           let current = aboutStartNode.nextElementSibling;
@@ -129,7 +126,7 @@ const swiper = new Swiper('.mySwiper', {
       },
       1440: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 90,
           centeredSlides: false
       }
   }
