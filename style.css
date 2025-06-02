@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -257,6 +258,7 @@ main {
   .swiper {
     overflow: visible;
     padding-bottom: 4rem;
+    
   }
 
   .swiper-wrapper {
@@ -371,25 +373,25 @@ main {
   }
 
   .slider-section {
-    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem 1rem;
   }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
   .swiper {
+    overflow: visible;
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    /* Prevent horizontal scroll */
+    margin: 0 auto;
   }
 
   .swiper-wrapper {
-    overflow: hidden !important;
+    display: flex;
   }
 
-  .swiper-slide {
-    flex-shrink: 0;
-    width: auto;
-  }
+  
 }
